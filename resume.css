@@ -1,0 +1,328 @@
+@font-face {
+    font-family: thin;
+    src: url(font/fonts/RobotoSlab-Thin.ttf);
+}
+@font-face {
+    font-family: light;
+    src: url(font/fonts/RobotoSlab-Light.ttf);
+}
+@font-face {
+    font-family: regular;
+    src: url(font/fonts/RobotoSlab-Regular.ttf);
+}
+@font-face {
+    font-family: bold;
+    src: url(font/fonts/RobotoSlab-Bold.ttf);
+}
+@font-face {
+    font-family: Barrio;
+    src: url(font/fonts/Barrio-Regular.ttf);
+}
+
+@page {
+    size: A4;
+}
+
+html, body {
+    width:794px;
+    height:1122px;
+    overflow: auto;
+}
+body {
+    /*box-shadow: 0 0 3px 1px rgba(0,0,0,0.1);*/
+    box-sizing: border-box;
+    font-family: regular, serif;
+    font-size: 14px;
+    background-color: #ECEFF1;
+}
+
+aside {
+    /*position: fixed;*/
+    float: left;
+    width: 250px;
+    height: 1122px;
+    padding: 35px 15px;
+    box-sizing: border-box;
+    background-color: #607D8B;
+    color: #ECEFF1;
+}
+aside .gender {
+    text-align: center;
+    margin-bottom: 10px;
+}
+aside .gender > img {
+    width: 60px;
+    height: 60px;
+}
+aside .head-name .name {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+    font-family: 'Barrio', cursive;
+    letter-spacing: 12px;
+}
+aside .head-name .label{
+    font-size: 13px;
+    white-space: normal;
+    text-align: center;
+    width: calc(100% - 22px);
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+    font-family: thin;
+    padding: 5px 0;
+}
+aside .head-name .icn{
+    width: 20px;
+    font-size: 15px;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+ul.general, ul.tech {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul.general .key {
+    font-family: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+ul.general .value {
+    margin-bottom: 12px;
+    line-height: 15px;
+}
+
+ul.tech li {
+    float: left;
+    width: 50%;
+}
+
+main {
+    padding: 37px 30px 25px;
+    margin: 0 0 0 250px;
+    font-size: 13px;
+}
+
+article {
+    text-align: center;
+    position: relative;
+}
+
+article > h3 {
+    background-color: #607D8B;
+    color: #ECEFF1;
+    margin: 0;
+    padding: 5px 25px;
+    display: inline-block;
+    border-radius: 14px;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    border-left: 5px solid #ECEFF1;
+    border-right: 5px solid #ECEFF1;
+}
+
+article > h3:before, article > span.line {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-top: 2px solid #607D8B;
+    top: 13px;
+    z-index: -1;
+}
+
+aside article {
+    margin: 25px 0;
+}
+
+aside article > h3 {
+    color: #607D8B;
+    background-color: #ECEFF1;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-left: 5px solid #607D8B;
+    border-right: 5px solid #607D8B;
+    position: relative;
+    z-index: 2;
+}
+
+aside article > h3:before {
+    display: none;
+}
+
+aside article > span.line {
+    z-index: 1;
+    border-color: #ECEFF1;
+}
+
+article > div {
+    padding: 10px 0;
+}
+
+aside .description {
+    font-family: light;
+    text-align: justify;
+    padding-top: 20px;
+}
+
+ul.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: 19px;
+}
+
+ul.list > li {
+    position: relative;
+    text-align: left;
+    padding: 0 0 10px 20px;
+}
+
+ul.list > li:before {
+    content: '';
+    position: absolute;
+    border: 2px solid #607D8B;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    left: 0;
+    top: 5px;
+}
+
+ul.list > li:after {
+    content: '';
+    position: absolute;
+    height: calc(100% - 11px);
+    border-left: 1px solid #99aeb8;
+    width: 0;
+    left: 5px;
+    top: 16px;
+}
+
+ul.list > li:last-child:after {
+    display: none;
+}
+
+.education .degree, .experience .company {
+    text-transform: uppercase;
+    color: #777;
+    letter-spacing: 3px;
+    font-family: bold;
+    font-size: 15px;
+}
+
+.education .degree .percent, .experience .company .time {
+    float: right;
+    letter-spacing: normal;
+    text-transform: initial;
+}
+
+.education .college, .experience .profile {
+    font-size: 13px;
+    font-family: light;
+    color: #777;
+    line-height: 1.5;
+}
+
+.education .college .passing-yr{
+    float: right;
+}
+
+ul.projects {
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+ul.projects > li {
+    list-style-type: disc;
+    margin-top: 3px;
+    text-align: justify;
+}
+
+ul.projects > li .heading {
+    font-family: bold;
+}
+
+ul.projects > li .sub-heading {
+    font-family: regular;
+    color: #607D8B;
+    font-size: 13px;
+}
+
+ul.projects > li .description {
+    margin-left: 10px;
+}
+
+.experience ul.projects {
+    padding-left: 20px;
+}
+
+.mark-text {
+    text-decoration: underline;
+}
+
+.experience ul.list > li {
+    padding-left: 0;
+}
+
+.experience ul.list > li:before, .experience ul.list > li:after {
+    content: none;
+}
+
+
+@media print {
+    body {
+        background-color: #ECEFF1 !important;
+        -webkit-print-color-adjust: exact;
+    }
+    aside {
+        background-color: #607D8B !important;
+        color: #ECEFF1 !important;
+        -webkit-print-color-adjust: exact;
+    }
+    article > h3 {
+        background-color: #607D8B !important;
+        color: #ECEFF1 !important;
+        border-left: 5px solid #ECEFF1 !important;
+        border-right: 5px solid #ECEFF1 !important;
+        -webkit-print-color-adjust: exact;
+    }
+    article > h3:before, article > span.line {
+        border-top: 2px solid #607D8B !important;
+        -webkit-print-color-adjust: exact;
+    }
+    aside article > h3 {
+        color: #607D8B !important;
+        background-color: #ECEFF1 !important;
+        border-left: 5px solid #607D8B !important;
+        border-right: 5px solid #607D8B !important;
+        -webkit-print-color-adjust: exact;
+    }
+    aside article > span.line {
+        border-color: #ECEFF1 !important;
+        -webkit-print-color-adjust: exact;
+    }
+    ul.list > li:before {
+        border: 2px solid #607D8B !important;
+        -webkit-print-color-adjust: exact;
+    }
+    ul.list > li:after {
+        border-left: 1px solid #99aeb8 !important;
+        -webkit-print-color-adjust: exact;
+    }
+    .education .degree, .experience .company, .education .college, .experience .profile {
+        color: #777 !important;
+        -webkit-print-color-adjust: exact;
+    }
+    ul.projects > li .sub-heading {
+        color: #607D8B !important;
+        -webkit-print-color-adjust: exact;
+    }
+}
