@@ -15,8 +15,8 @@
     src: url(font/fonts/RobotoSlab-Bold.ttf);
 }
 @font-face {
-    font-family: Barrio;
-    src: url(font/fonts/Barrio-Regular.ttf);
+    font-family: Kavivanar;
+    src: url(font/fonts/Kavivanar-Regular.ttf);
 }
 
 @page {
@@ -59,8 +59,8 @@ aside .head-name .name {
     text-align: center;
     margin: 0 0 15px;
     text-transform: uppercase;
-    font-family: 'Barrio', cursive;
-    letter-spacing: 12px;
+    font-family: 'Kavivanar', cursive;
+    letter-spacing: 1px;
 }
 aside .head-name .label{
     font-size: 13px;
