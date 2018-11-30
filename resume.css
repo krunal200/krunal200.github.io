@@ -23,13 +23,11 @@
     size: A4;
 }
 
-html, body {
+body {
+    /*box-shadow: 0 0 3px 1px rgba(0,0,0,0.1);*/
     width:794px;
     height:1122px;
     overflow: auto;
-}
-body {
-    /*box-shadow: 0 0 3px 1px rgba(0,0,0,0.1);*/
     box-sizing: border-box;
     font-family: regular, serif;
     font-size: 14px;
@@ -62,7 +60,7 @@ aside .head-name .name {
     font-family: 'Kavivanar', cursive;
     letter-spacing: 1px;
 }
-aside .head-name .label{
+aside .head-name .label1{
     font-size: 13px;
     white-space: normal;
     text-align: center;
@@ -70,7 +68,7 @@ aside .head-name .label{
     display: inline-block;
     vertical-align: middle;
     line-height: 1.6;
-    font-family: thin;
+    font-family: light;
     padding: 5px 0;
 }
 aside .head-name .icn{
@@ -231,7 +229,7 @@ ul.list > li:last-child:after {
     line-height: 1.5;
 }
 
-.education .college .passing-yr{
+.education .college .passing-yr, .experience .profile .time-frame {
     float: right;
 }
 
@@ -260,20 +258,26 @@ ul.projects > li .description {
     margin-left: 10px;
 }
 
-.experience ul.projects {
+/* .experience ul.projects {
     padding-left: 20px;
-}
+} */
 
 .mark-text {
     text-decoration: underline;
 }
 
-.experience ul.list > li {
+/* .experience ul.list > li {
     padding-left: 0;
 }
 
 .experience ul.list > li:before, .experience ul.list > li:after {
     content: none;
+} */
+
+.newly-married-couple {
+    display: inline-block;
+    background: url('font/fonts/newly-married-couple.svg');
+    height: 20px;
 }
 
 
