@@ -169,6 +169,7 @@ article > div {
 aside .description {
     font-family: light;
     text-align: justify;
+    hyphens: auto;
     padding-top: 20px;
 }
 
