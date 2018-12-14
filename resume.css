@@ -23,13 +23,11 @@
     size: A4;
 }
 
-html, body {
+body {
+    /*box-shadow: 0 0 3px 1px rgba(0,0,0,0.1);*/
     width:794px;
     height:1122px;
     overflow: auto;
-}
-body {
-    /*box-shadow: 0 0 3px 1px rgba(0,0,0,0.1);*/
     box-sizing: border-box;
     font-family: regular, serif;
     font-size: 14px;
@@ -39,7 +37,7 @@ body {
 aside {
     /*position: fixed;*/
     float: left;
-    width: 250px;
+    width: 225px;
     height: 1122px;
     padding: 35px 15px;
     box-sizing: border-box;
@@ -60,9 +58,9 @@ aside .head-name .name {
     margin: 0 0 15px;
     text-transform: uppercase;
     font-family: 'Kavivanar', cursive;
-    letter-spacing: 1px;
+    letter-spacing: -1px;
 }
-aside .head-name .label{
+aside .head-name .label1{
     font-size: 13px;
     white-space: normal;
     text-align: center;
@@ -70,7 +68,7 @@ aside .head-name .label{
     display: inline-block;
     vertical-align: middle;
     line-height: 1.6;
-    font-family: thin;
+    font-family: light;
     padding: 5px 0;
 }
 aside .head-name .icn{
@@ -78,6 +76,7 @@ aside .head-name .icn{
     font-size: 15px;
     line-height: 1;
     vertical-align: middle;
+    text-align: center;
 }
 
 ul.general, ul.tech {
@@ -91,11 +90,12 @@ ul.general .key {
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 1px;
+    margin-bottom: 2px;
 }
 
 ul.general .value {
-    margin-bottom: 12px;
-    line-height: 15px;
+    margin: 0 0 12px 7px;
+    line-height: 1.2;
 }
 
 ul.tech li {
@@ -104,8 +104,8 @@ ul.tech li {
 }
 
 main {
-    padding: 37px 30px 25px;
-    margin: 0 0 0 250px;
+    padding: 25px;
+    margin: 0 0 0 225px;
     font-size: 13px;
 }
 
@@ -163,12 +163,13 @@ aside article > span.line {
 }
 
 article > div {
-    padding: 10px 0;
+    padding: 10px 0 0;
 }
 
 aside .description {
     font-family: light;
     text-align: justify;
+    hyphens: auto;
     padding-top: 20px;
 }
 
@@ -226,17 +227,21 @@ ul.list > li:last-child:after {
 
 .education .college, .experience .profile {
     font-size: 13px;
-    font-family: light;
-    color: #777;
+    font-family: regular;
+    color: #888;
     line-height: 1.5;
 }
 
-.education .college .passing-yr{
+.education .college .passing-yr, .experience .profile .time-frame {
     float: right;
 }
 
+.education ul.list > li:last-child {
+    padding-bottom: 0px;
+}
+
 ul.projects {
-    padding-left: 30px;
+    padding-left: 20px;
     margin-top: 10px;
 }
 
@@ -260,20 +265,35 @@ ul.projects > li .description {
     margin-left: 10px;
 }
 
-.experience ul.projects {
+/* .experience ul.projects {
     padding-left: 20px;
-}
+} */
 
 .mark-text {
     text-decoration: underline;
 }
 
-.experience ul.list > li {
+/* .experience ul.list > li {
     padding-left: 0;
 }
 
 .experience ul.list > li:before, .experience ul.list > li:after {
     content: none;
+} */
+
+.newly-married-couple {
+    display: inline-block;
+    background: url('font/fonts/newly-married-couple.svg');
+    height: 20px;
+    margin-left: 2px;
+}
+
+.sub-list {
+    padding-left: 20px;
+}
+
+.sub-list > li {
+    list-style-type: circle;
 }
 
 
